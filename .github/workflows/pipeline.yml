@@ -16,6 +16,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
+    - name: Install browsers 
+      run: npx playwright install 
     - name: Start the app
       run: npm start &
     - name: Run UI tests
